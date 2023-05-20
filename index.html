@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Vue.js</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>{{titulo}}</h1>
+        </header>
+        <main>
+            <p>{{sumas()}}</p>
+            <p>{{suma}}</p>
+            <p v-text="mensaje"></p>
+            <div v-html="div"></div>
+
+            <img :src="url" v-bind:alt="alt">
+
+            <p>{{numero}}</p>
+            <button v-on:click="multiplicado" value="Click">Click</button>
+            <p>{{numero}}</p>
+
+            <input type="text" v-model="parrafo">
+            <p>{{parrafo}}</p>
+
+        </main>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
