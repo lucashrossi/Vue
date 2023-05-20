@@ -13,19 +13,10 @@
             <h1>{{titulo}}</h1>
         </header>
         <main>
-            <p>{{sumas()}}</p>
-            <p>{{suma}}</p>
-            <p v-text="mensaje"></p>
-            <div v-html="div"></div>
-
-            <img :src="url" v-bind:alt="alt">
-
+       
+            <button v-on:click="suma" value="Click">Suma</button>
+            <button v-on:click="resta" value="Click">Resta</button>
             <p>{{numero}}</p>
-            <button v-on:click="multiplicado" value="Click">Click</button>
-            <p>{{numero}}</p>
-
-            <input type="text" v-model="parrafo">
-            <p>{{parrafo}}</p>
 
         </main>
 

@@ -4,17 +4,9 @@ const {createApp} = Vue;
 createApp({
     data() {
         return {
-            titulo: "Holaaaa Vue",
-            a:20,
-            b:20,
-            numero: 100,
-            mensaje: "lalalalalala",
-            div: `
-            <h3>Hola</h3>
-            `,
-            url: "https://www.clarin.com/img/2021/07/24/d3mu5d29c_340x340__1.jpg",
-            alt: "Perrito",
-            parrafo: ""
+            titulo: "Contador",
+            numero: 0
+           
         }
     },
     created() {
@@ -22,21 +14,18 @@ createApp({
     },
     methods: {
         calculo() {
-            // this.a =20;
-            // this.b =20;
-            // console.log(a*b)
+            this.numero = 10
+        
         },
-        sumas() {
-            return this.numero + 100
+        suma() {
+            return this.numero += 1
         },
-        multiplicado() {
-            this.numero *= 10
+        resta() {
+            this.numero -= 1
         }
     },
     computed: {
-        suma() {
-            return this.numero + 200
-        }
+        
     }
 
 }).mount("#app")
