@@ -11,12 +11,17 @@
     <div id="app">
         <header>
             <h1>{{titulo}}</h1>
+            
         </header>
         <main>
        
             <button v-on:click="suma" value="Click">Suma</button>
             <button v-on:click="resta" value="Click">Resta</button>
             <p>{{numero}}</p>
+
+            <headerh :tituloh="tituloh" :total="total" :foto="foto" :fecha="fecha"></headerh>
+            <headerh :foto=""></headerh>
+            <headerh :tituloh="'Holaaa!'" :total="9999" :foto="'./HG.png'" :fecha="'20/12/2023'"></headerh>
 
         </main>
 
